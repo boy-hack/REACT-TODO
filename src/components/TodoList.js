@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
-import TodoItem from './TodoItem'
+import { List } from 'antd';
+import TodoItem from "./TodoItem"
 export default class TodoList extends Component {
     render() {
+        const data = [];
+        this.props.todos.forEach(element => {
+            data.push(element.name)
+        });
         return (
-            <ul>
-                {
-                    this.props.todos.map((todo, index) => {
-                        return (
-                            <TodoItem
-                                taskId={todo.id}
-                                key={todo.id}
-                                name={todo.name}
-                                isCompleted={todo.isCompleted} 
-                                removeTask={this.props.removeTask}
-                            />
-                        )
-                    })
-                }
-            </ul>
-        )
+            <div style={{width:"654px",marginTop:"20px"}}>
+            <List
+                size="large"
+                dataSource={this.props.todos}
+                bordered
+                renderItem={item => (<TodoItem taskId={item.id} removeTask={this.props.removeTask} name={item.name} isCompleted={item.isCompleted} handleToggleComplete={this.props.handleToggleComplete}/>)}
+            />
+            </div>
+        );
     }
 }

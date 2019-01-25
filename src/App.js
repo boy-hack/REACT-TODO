@@ -68,11 +68,19 @@ class App extends Component {
   }
 
   render() {
+    let statistics = {
+      total:this.state.todos.length||0,
+      finished:this.state.todos.filter((todo)=>{
+        return todo.isCompleted
+      }).length
+    }
     return (
       <div style={{"margin":"30px auto",width:"850px"}}>
         <h2>Todo List </h2>
         <header>
-          <Icon type="apple" theme="filled" />
+          <span style={{display:"block",marginBottom:"8px"}}>
+          <Icon type="apple" theme="filled" /> Total:{statistics.total} &nbsp; <Icon type="appstore" /> Finished:{statistics.finished}
+          </span>
           <Search
             placeholder="input search text"
             enterButton="Add Todo"

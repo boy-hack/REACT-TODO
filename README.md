@@ -1,8 +1,8 @@
-<https://x.hacking8.com/tag/REACT%E5%AD%A6%E4%B9%A0> 记录了我使用REACT按照教程制作的todo list demo，并且使用了蚂蚁金服开源的组件库[ant.design][https://ant.design/] 修饰的过程。
+<https://x.hacking8.com/tag/REACT%E5%AD%A6%E4%B9%A0> 记录了我使用REACT按照教程制作的todo list demo，并且使用了蚂蚁金服开源的组件库[ant.design](https://ant.design/) 修饰的过程。
 
 ## 参考教程
 
-我是按照https://github.com/zhaohaodang/react-todo和https://ant.design/docs/react/introduce-cn的教程学习，并参考了下面教程。
+我是按照 https://github.com/zhaohaodang/react-todo 和 https://ant.design/docs/react/introduce-cn 的教程学习，并参考了下面教程。
 
 - 3小时速成 Vue2.x 核心技术 <https://www.imooc.com/video/18564> 
 

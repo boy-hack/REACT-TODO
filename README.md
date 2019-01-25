@@ -1,5 +1,11 @@
 <https://x.hacking8.com/tag/REACT%E5%AD%A6%E4%B9%A0> 记录了我使用REACT按照教程制作的todo list demo，并且使用了蚂蚁金服开源的组件库[ant.design](https://ant.design/) 修饰的过程。
 
+我的2019年计划里给自己立一个flag，前端达到了解水平。我认为达到“了解前端”至少需要知道下面的如何做。  
+- [x] 能使用开源组件库（antd elementui）完成demo
+- [ ] 前端路由操作
+- [ ] 数据异步响应，axios
+- [ ] 修改其他开源例子
+
 ## 参考教程
 
 我是按照 https://github.com/zhaohaodang/react-todo 和 https://ant.design/docs/react/introduce-cn 的教程学习，并参考了下面教程。
